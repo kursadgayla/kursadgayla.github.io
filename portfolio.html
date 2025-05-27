@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mehmet Kürşad Gayla'nin Portföyü</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Kürşad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hakkimda">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projelerim">Projelerim</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Giriş Bölümü -->
+<header class="text-white py-5" style="margin-top: 80px;">
+  <div class="container text-center">
+    <h1 class="display-4">Merhaba, Ben Mehmet Kürşad Gayla</h1>
+    <p class="lead">Bu benim ilk web portföy sayfam.</p>
+    <p>IT sektöründe 10 yıllık deneyime sahibim. Sistem, ağ ve güvenlik alanlarında projeler geliştiriyorum.</p>
+  </div>
+</header>
+
+<!-- Hakkımda -->
+<section id="hakkimda" class="py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4">Hakkımda</h2>
+    <p>
+      Merhaba, ben Kürşad. IT sektöründe çalışıyor, teknoloji ve sistem güvenliği konularına büyük ilgi duyuyorum. 
+      Eğitimlerimi sürdürüyor, sürekli kendimi geliştiriyorum. Bu portföy sayfasında projelerimi ve deneyimlerimi paylaşıyorum.
+    </p>
+  </div>
+</section>
+
+<!-- Projelerim -->
+ <section id="projelerim" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="text-primary mb-4">Projelerim</h2>
+    <div class="row g-4">
+
+      <!-- Proje Kartı 1 -->
+      <div class="col-md-4">
+        <div class="card text-dark" data-bs-toggle="modal" data-bs-target="#proje1Modal">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proje 1">
+          <div class="card-body">
+            <h5 class="card-title">Proje Adı 1</h5>
+            <p class="card-text">Kısa açıklama...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje Kartı 2 -->
+      <div class="col-md-4">
+        <div class="card text-dark" data-bs-toggle="modal" data-bs-target="#proje2Modal">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proje 2">
+          <div class="card-body">
+            <h5 class="card-title">Proje Adı 2</h5>
+            <p class="card-text">Kısa açıklama...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Proje 1 Modal -->
+<div class="modal fade" id="proje1Modal" tabindex="-1" aria-labelledby="proje1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proje1Label">Proje Adı 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Bu proje hakkında detaylı bilgi burada yer alacak.</p>
+        <p><strong>Kullanılan teknolojiler:</strong> HTML, CSS, JS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Proje 2 Modal -->
+<div class="modal fade" id="proje2Modal" tabindex="-1" aria-labelledby="proje2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proje2Label">Proje Adı 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>İkinci proje hakkında açıklamalar burada.</p>
+        <p><strong>Kullanılan teknolojiler:</strong> React, Node.js</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="projelerim" class="py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4">Projelerim</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      
+      <!-- Proje Kartı 1 -->
+      <div class="col">
+        <div class="card bg-dark text-white h-100">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proje 1">
+          <div class="card-body">
+            <h5 class="card-title">Firewall Yapılandırma</h5>
+            <p class="card-text">Fortigate ile temel kurallar ve NAT ayarlarını içeren simülasyon projesi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje Kartı 2 -->
+      <div class="col">
+        <div class="card bg-dark text-white h-100">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proje 2">
+          <div class="card-body">
+            <h5 class="card-title">VMware Test Ortamı</h5>
+            <p class="card-text">VMware Workstation ile oluşturulmuş test ortamında Active Directory kurulumu.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje Kartı 3 -->
+      <div class="col">
+        <div class="card bg-dark text-white h-100">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proje 3">
+          <div class="card-body">
+            <h5 class="card-title">Yedekleme Senaryosu</h5>
+            <p class="card-text">Veeam Backup & Replication ile senaryolu yedekleme simülasyonu.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html><!-- İletişim -->
+<section id="iletisim" class="py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4">İletişim</h2>
+    <form>
+      <div class="mb-3">
+        <label for="isim" class="form-label">Adınız Soyadınız</label>
+        <input type="text" class="form-control" id="isim" placeholder="Kürşad">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-posta Adresiniz</label>
+        <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
+      </div>
+      <div class="mb-3">
+        <label for="mesaj" class="form-label">Mesajınız</label>
+        <textarea class="form-control" id="mesaj" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </form>
+    <div class="mt-4">
+      <p>Bana sosyal medya üzerinden de ulaşabilirsin:</p>
+      <a href="https://www.linkedin.com/in/senin-linkedin" target="_blank" class="btn btn-outline-light btn-sm me-2">LinkedIn</a>
+      <a href="https://github.com/senin-github" target="_blank" class="btn btn-outline-light btn-sm">GitHub</a>
+    </div>
+  </div>
+</section>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Kürşad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hakkimda">Hakkımda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projelerim">Projelerim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
